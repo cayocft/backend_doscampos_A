@@ -22,6 +22,11 @@ db.once('open', function() {
 });
 /**FIn Conexion DB */
 /** RUtas Servicios*/
+const registroForm = require('./funcionalidad/rutas/registroForm');
+
+router.use('/registroForm',registroForm);
+
+
 router.get('/', (req, res) => {
   res.send('Hello World!')
 })
